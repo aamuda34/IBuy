@@ -1,0 +1,138 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f6f8f8;color:#172033}button,a{display:inline-block;border:0;border-radius:10px;padding:10px 14px;margin:4px;background:#0f766e;color:#fff;text-decoration:none;cursor:pointer;font:inherit}button:hover,a:hover{filter:brightness(.96)}button.danger{background:#b42318}button:disabled{opacity:.5;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}input,select,textarea{width:100%;padding:11px;border:1px solid #d0d5dd;border-radius:9px;background:#fff;font:inherit}textarea{min-height:90px}label{display:block;font-size:.86rem;font-weight:650;margin:8px 0}label input,label select,label textarea{display:block;margin-top:5px;font-weight:400}.brand{font-weight:900;font-size:1.15rem;cursor:pointer}.brandmark{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#0f766e;color:#fff;margin-right:5px}.hero{padding:28px 16px;background:#fff;border-bottom:1px solid #e5e7eb}.hero h1{max-width:760px;font-size:clamp(2rem,7vw,4rem);line-height:1.02;margin:8px 0}.hero p{max-width:760px;color:#667085}.eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.14em;color:#0f766e}.search{display:flex;gap:8px;max-width:720px}.search input{flex:1}.tabs{display:flex;gap:5px;overflow:auto;padding:8px 12px;background:#fff;border-bottom:1px solid #e5e7eb}.tabs button{white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;padding:16px}.card,.panel,.detail,.order,.auth{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:16px}.card{cursor:pointer}.card .pic,.pic{height:170px;background:#eef4f3;border-radius:12px;display:grid;place-items:center;overflow:hidden;font-weight:900;color:#0f766e}.smallpic{height:130px}.pic img{width:100%;height:100%;object-fit:cover}.large{height:360px}.badge{display:inline-block;background:#e4e7ec;color:#344054;border-radius:999px;padding:3px 8px;font-size:.75rem}.badge.success{background:#dcfae6;color:#067647}.badge.warning{background:#fef0c7;color:#b54708}.badge.neutral{background:#eaecf0;color:#344054}.muted{color:#667085;font-size:.8rem}.filters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;padding:16px}.loadmore{display:block;margin:10px auto}.detail{margin:16px}.detail-grid{display:grid;grid-template-columns:minmax(280px,1fr) minmax(280px,1fr);gap:24px;margin-top:12px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.preview{max-width:240px;max-height:200px;border-radius:10px}.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.stats div{background:#f4f7f6;border-radius:12px;padding:12px;text-align:center}.stats b,.stats small{display:block}.empty{padding:40px 16px;text-align:center;color:#667085}.modal-backdrop{position:fixed;inset:0;background:#0008;z-index:20;display:grid;place-items:center;padding:18px}.modal{width:min(620px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:18px;padding:20px}.modal button{margin-top:8px}.loader{display:none;position:fixed;right:12px;bottom:12px;background:#172033;color:#fff;padding:9px 12px;border-radius:999px;z-index:30}.loading .loader{display:flex;gap:8px;align-items:center}.spinner{width:15px;height:15px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:spin .7s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}#toast{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:40;background:#172033;color:#fff;padding:10px 15px;border-radius:999px;opacity:0;pointer-events:none;transition:.2s;max-width:min(90vw,620px);text-align:center}#toast.show{opacity:1}.auth{display:grid;gap:5px}.map{height:360px;border-radius:16px;overflow:hidden;margin:12px 16px}.store-hero{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center}.store-hero img,.store-logo{width:180px;height:180px;object-fit:cover;border-radius:16px;background:#e4f3f0;display:grid;place-items:center;font-size:2rem;font-weight:900;color:#0f766e}.store-hero.compact img,.store-hero.compact .store-logo{width:110px;height:110px}.chart{width:100%;height:220px;background:#fff;border:1px solid #e5e7eb;border-radius:12px}.inline-form{display:flex;flex-wrap:wrap;gap:8px;align-items:center;width:100%}.inline-form input[type=email]{max-width:260px}.inline-form label{display:inline-flex;align-items:center;gap:4px}.inline-form label input{width:auto}.skip{position:absolute;left:-9999px;top:8px;z-index:100}.skip:focus{left:8px}.field-error{display:block;color:#b42318;font-weight:600;margin-top:4px}.invalid{border-color:#d92d20!important;outline:2px solid #fee4e2}footer{display:flex;flex-wrap:wrap;gap:8px;padding:20px 16px;color:#667085;border-top:1px solid #e5e7eb;background:#fff}footer a{background:transparent;color:#0f766e;padding:3px}@media(max-width:700px){.filters,.detail-grid,.form-grid,.store-hero{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.large{height:280px}.hero{padding:22px 14px}.grid{padding:12px}.search{flex-direction:column}.map{margin:12px;height:300px}.store-hero img,.store-logo{width:100%;height:200px}}
+.location-box{margin:12px 0;padding:12px;border:1px solid #b7d9d3;background:#f2fbf9;border-radius:12px}.location-box button{margin-left:0}.location-box small{display:block;margin-top:6px}.store-location{font-size:.8rem;color:#667085}.storefront-badge{font-size:.8rem;color:#067647;font-weight:700}
+
+/* IBuy V2.4 horizontal discovery feeds */
+.discovery-section{margin:1.25rem 0}
+.discovery-section .section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:.65rem}
+.discovery-section h2{margin:0}.discovery-section p{margin:.25rem 0 0;color:#64748b;font-size:.9rem}
+.horizontal-feed{display:flex;gap:.8rem;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;padding:.25rem .1rem .7rem;scrollbar-width:thin}
+.horizontal-feed:focus-visible{outline:3px solid #ffb703;outline-offset:3px;border-radius:12px}
+.feed-card{flex:0 0 min(72vw,250px);scroll-snap-align:start;background:#fff;border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(15,23,42,.06);cursor:pointer}
+.feed-card img,.feed-placeholder{width:100%;height:155px;object-fit:cover;background:#eef3f5}
+.feed-placeholder{display:grid;place-items:center;font-weight:800;color:#0f766e;font-size:1.15rem}
+.feed-body{padding:.75rem}.feed-body strong{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.feed-price{font-weight:800;margin-top:.35rem}.feed-store,.feed-body small{color:#64748b;margin-top:.2rem;display:block}
+@media (min-width:700px){.feed-card{flex-basis:230px}}
+
+/* IBuy V2.7 mobile navigation */
+:root{--ibuy-nav-height:52px}
+.tabs{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  padding-top:max(.35rem,env(safe-area-inset-top));
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid #e2e8f0;
+  box-shadow:0 2px 10px rgba(15,23,42,.08);
+}
+.tabs button{
+  min-height:44px;
+}
+.tabs button:focus-visible{
+  outline:3px solid #ffb703;
+  outline-offset:-2px;
+}
+#view{
+  scroll-margin-top:calc(var(--ibuy-nav-height) + env(safe-area-inset-top));
+}
+@media (max-width:700px){
+  .tabs{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    white-space:nowrap;
+    justify-content:flex-start;
+  }
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{flex:0 0 auto}
+}
+
+/* IBuy V2.8 — robust mobile navigation: fixed so it remains visible during page scrolling. */
+:root{--ibuy-nav-height:56px}
+body{padding-top:0}
+#app{padding-top:0}
+.tabs{
+  position:fixed !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  width:100% !important;
+  z-index:2000 !important;
+  min-height:var(--ibuy-nav-height);
+  padding-top:max(.25rem,env(safe-area-inset-top)) !important;
+  padding-bottom:.25rem !important;
+  box-sizing:border-box;
+  background:rgba(255,255,255,.98) !important;
+  box-shadow:0 2px 12px rgba(15,23,42,.12);
+  border-bottom:1px solid #dfe5e7;
+}
+#view{
+  padding-top:calc(var(--ibuy-nav-height) + env(safe-area-inset-top));
+  scroll-margin-top:calc(var(--ibuy-nav-height) + env(safe-area-inset-top));
+}
+@media (max-width:700px){
+  .tabs{
+    display:flex;
+    align-items:center;
+    overflow-x:auto;
+    white-space:nowrap;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{
+    flex:0 0 auto;
+    min-height:44px;
+    margin:3px;
+  }
+}
+
+/* IBuy V2.10 — keep account/header controls visible above the persistent navigation. */
+:root{
+  --ibuy-topbar-height:54px;
+  --ibuy-nav-height:56px;
+}
+header{
+  position:fixed !important;
+  top:0 !important;
+  left:0 !important;
+  right:0 !important;
+  z-index:2100 !important;
+  min-height:var(--ibuy-topbar-height);
+  height:var(--ibuy-topbar-height);
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:max(4px,env(safe-area-inset-top)) 12px 4px;
+  background:rgba(255,255,255,.98);
+  border-bottom:1px solid #e2e8f0;
+  box-shadow:0 1px 8px rgba(15,23,42,.06);
+}
+header .brand{cursor:pointer;white-space:nowrap}
+#session{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  min-width:0;
+}
+#session button{
+  min-height:40px;
+  white-space:nowrap;
+}
+.tabs{
+  top:var(--ibuy-topbar-height) !important;
+  z-index:2000 !important;
+}
+#view{
+  padding-top:calc(var(--ibuy-topbar-height) + var(--ibuy-nav-height) + env(safe-area-inset-top));
+  scroll-margin-top:calc(var(--ibuy-topbar-height) + var(--ibuy-nav-height) + env(safe-area-inset-top));
+}
+@media (max-width:700px){
+  header{padding-left:10px;padding-right:10px}
+  #session{overflow-x:auto;scrollbar-width:none}
+  #session::-webkit-scrollbar{display:none}
+}

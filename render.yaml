@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: ibuy-web
+    runtime: python
+    buildCommand: "python -m py_compile server.py"
+    startCommand: "python server.py"
+    envVars:
+      - key: IBUY_HOST
+        value: 0.0.0.0
+      - key: IBUY_PORT
+        value: 10000
+      - key: IBUY_SECURE_COOKIES
+        value: "1"
+      - key: IBUY_SESSION_SECRET
+        generateValue: true
+      - key: IBUY_PUBLIC_BASE_URL
+        sync: false
+      - key: IBUY_BOOTSTRAP_ADMIN_EMAIL
+        sync: false
+      - key: IBUY_BOOTSTRAP_ADMIN_PASSWORD
+        sync: false
+      - key: IBUY_DB_PATH
+        value: /var/data/ibuy/ibuy.sqlite3
+    disk:
+      name: ibuy-data
+      mountPath: /var/data/ibuy
+      sizeGB: 10
