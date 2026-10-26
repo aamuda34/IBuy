@@ -1,5 +1,5 @@
-const CACHE='ibuy-v2.13';
-const CORE=['/','/index.html','/app.js?v=2.13','/styles.css?v=2.13','/manifest.json','/icons/icon-192.png','/icons/icon-512.png'];
+const CACHE='ibuy-v2.14';
+const CORE=['/','/index.html','/app.js?v=2.14','/styles.css?v=2.14','/manifest.json','/icons/icon-192.png','/icons/icon-512.png'];
 
 self.addEventListener('install', event=>{
   event.waitUntil(
